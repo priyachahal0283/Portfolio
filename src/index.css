@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #fcd34d;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0c0a09;
+}
+
+body {
+  @apply bg-[#0c0a09] text-slate-300 font-sans relative;
+
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: center;
+}
+
+.glass-card {
+  @apply bg-white/5 border border-white/10 backdrop-blur-md;
+}
+
+.glass-btn {
+  @apply bg-white/5 border border-white/10 backdrop-blur-md text-white hover:bg-white/10 transition;
+}
+
+.beige-btn {
+  @apply bg-amber-300 text-black font-semibold hover:shadow-[0_0_20px_#fcd34d99] transition-all duration-300;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0a09;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-amber-600/50 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-amber-300;
+}
